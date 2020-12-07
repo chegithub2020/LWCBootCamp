@@ -1,0 +1,20 @@
+<template>
+    <lightning-layout>
+        <div class="slds-m-around_small">
+            <lightning-button variant="brand" label="Show Tom" onclick={showTom}> </lightning-button>
+        </div>
+        <template if:true={isJerry}>
+            <img src="https://ustgloabl-dev-ed--c.visualforce.com/resource/1606972941000/JE2"
+            width="200"
+            height="200"/>
+        </template>   
+        <template if:true={isTom}>
+            <img src="https://ustgloabl-dev-ed--c.visualforce.com/resource/1606973943000/Tom?"
+                width="200"
+                height="200"/>
+        </template>    
+        <div class="slds-m-around_small">
+            <lightning-button variant="brand" label="Show Jerry"  onclick={showJerry} > </lightning-button>
+        </div>
+    </lightning-layout>  
+</template>
